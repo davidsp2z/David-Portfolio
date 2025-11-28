@@ -1,0 +1,180 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>TechMedia Design — Portfolio</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+<!-- NAVBAR -->
+<header class="header">
+  <div class="logo">
+    <img src="image/logo.png" alt="TechMedia Design Logo">
+   
+  </div>
+
+  <nav id="navLinks" class="nav-links">
+    <a href="#hero">Home</a>
+    <a href="#about">About</a>
+    <a href="#projects">Projects</a>
+    <a href="#skills">Skills</a>
+    <a href="#contact">Contact</a>
+  </nav>
+
+  <!-- DARK MODE BUTTON -->
+  <button id="modeToggle" class="mode-btn">🌙</button>
+  
+  <!-- MOBILE MENU BUTTON -->
+  <button class="menu-btn" id="menuBtn">☰</button>
+</header>
+
+
+<!-- HERO SECTION -->
+<section id="hero" class="hero">
+  <div class="hero-content">
+    <h1 class="hero-title">Hi, I’m David Bassey</h1>
+    <p class="hero-text">UI/UX Designer • Developer • Copywriter</p>
+    <div class="hero-buttons">
+  <a href="#projects" class="hero-btn primary-btn">View Projects</a>
+  <a href="#contact" class="hero-btn secondary-btn">Contact Me</a>
+</div>
+  </div>
+</section>
+
+
+<!-- ABOUT SECTION -->
+<section id="about" class="about">
+  <h2>About Me</h2>
+
+  <div class="about-container">
+    <div class="about-photo">
+      <img src="image/davo-2.jpg" alt="David Bassey">
+    </div>
+    <div class="about-text">
+  <p>
+    I'm a UI/UX designer and digital creative with experience across web and mobile design.
+    I help brands turn ideas into clean, modern and functional interfaces.
+    With 5+ years of experience, I’ve worked on mobile apps, web platforms, dashboards, brand content, and digital strategy for clients across different industries.
+  </p>
+
+  <div class="about-info">
+    <div class="info-item"><span>Company:</span> TechMedia Design</div>
+    <div class="info-item"><span>Email:</span> <a href="mailto:dbassey07@gmail.com">dbassey07@gmail.com</a></div>
+    <div class="info-item"><span>Phone:</span> <a href="tel:+2347053815321">+234 705 381 5321</a></div>
+  </div>
+</section>
+
+
+<!-- PROJECTS -->
+<section id="projects" class="projects">
+  <h2>Proof of Works</h2>
+
+  <div class="project-grid">
+
+    <div class="card">
+      <img src="image/mental-health-app.png" alt="Mental Health App">
+      <h3>Mental Health App</h3>
+      "A mental health app that helps users track moods, manage stress, and improve overall well-being" 
+    </div>
+
+    <div class="card">
+      <img src="image/green-plant-energy.png" alt="Green Plant Energy">
+      <h3>Green Plant Energy</h3>
+     "Green Plant Energy Dashboard: a clean interface to monitor and manage sustainable energy usage" 
+    </div>
+
+    <div class="card">
+      <img src="image/fintech-app-screen.png" alt="Fintech App Screen">
+      <h3>Fintech App Screen</h3>
+      "Smart financial dashboard with mobile-first UI"
+    </div>
+
+    <div class="card">
+      <img src="image/team-management-dashboard.png" alt="Team Management Dashboard">
+      <h3>Team Management Dashboard</h3>
+      "Work management UI for remote teams"
+    </div>
+
+  </div>
+</section>
+
+
+<!-- SKILLS -->
+<section id="skills" class="skills">
+  <h2>Skills</h2>
+  <div class="skills-grid">
+    <div class="skill-box">UI/UX Design</div>
+    <div class="skill-box">User Research</div>
+    <div class="skill-box">Graphics Design</div>
+    <div class="skill-box">Prototyping</div>
+    <div class="skill-box">HTML & CSS</div>
+    <div class="skill-box">JavaScript</div>
+    <div class="skill-box">Copywriting</div>
+    </div>
+</section>
+
+
+<section id="quick-facts" class="quick-facts">
+  <h2>Specialize Tools</h2>
+  <div class="facts-grid">
+    <div class="fact-item">Figma</div>
+    <div class="fact-item">Adobe XD</div>
+    <div class="fact-item">Photoshop</div>
+    <div class="fact-item">Illustrator</div>
+    <div class="fact-item">Sketch</div>
+    <div class="fact-item">Asana</div>
+    <div class="fact-item">Trello</div>
+  </div>
+</section>
+
+
+<!-- CONTACT -->
+<section id="contact" class="contact">
+  <h2>Contact Me</h2>
+  <p><a href="mailto:dbassey07@gmail.com">📧 dbassey07@gmail.com</a></p>
+  <p><a href="tel:+2347053815321">📞 +234 705 381 5321</a></p>
+
+  <button class="email-btn" onclick="window.location.href='mailto:dbassey07@gmail.com'">
+    Send Email
+  </button>
+</section>
+
+<script src="script.js"></script>
+
+<footer>
+  <p>© 2025 TechMedia Design. All rights reserved.</p>
+</footer>
+
+<button id="backToTop">↑</button>
+
+<script>
+document.addEventListener("DOMContentLoaded", () => {
+  
+  const btn = document.getElementById("backToTop");
+
+  // Show button after scrolling
+  window.addEventListener("scroll", () => {
+    if (window.scrollY > 300) {
+      btn.style.display = "flex";
+    } else {
+      btn.style.display = "none";
+    }
+  });
+
+  // Scroll to top smooth
+  btn.addEventListener("click", () => {
+    window.scrollTo({
+      top: 0,
+      behavior: "smooth"
+    });
+  });
+
+});
+</script>
+
+
+</body>
+</html>
